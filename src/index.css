@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-surface text-slate-300 font-sans;
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(34,211,238,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 10%, rgba(14,165,233,0.04) 0%, transparent 60%);
+  }
+  ::selection { @apply bg-accent/20 text-accent; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-surface; }
+  ::-webkit-scrollbar-thumb { @apply bg-accent/30 rounded-full; }
+
+  .light body {
+    @apply bg-slate-50 text-slate-700;
+  }
+}
+
+@layer utilities {
+  .glow { box-shadow: 0 0 30px rgba(34,211,238,0.25); }
+  .glow-sm { box-shadow: 0 0 12px rgba(34,211,238,0.2); }
+  .grid-bg {
+    background-image: linear-gradient(rgba(34,211,238,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34,211,238,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #22D3EE, #0ea5e9, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.light .card-dark { @apply bg-white border-slate-200 shadow-md; }
+.card-dark { @apply bg-surface-2 border-border; }
+
+/* Light mode overrides */
+html.light { color-scheme: light; }
+html.light body {
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(34,211,238,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 10%, rgba(14,165,233,0.06) 0%, transparent 60%);
+  color: #334155;
+}
+html.light .grid-bg {
+  background-image: linear-gradient(rgba(34,211,238,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34,211,238,0.07) 1px, transparent 1px);
+}
