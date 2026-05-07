@@ -1,4 +1,4 @@
-import { Mail, Heart } from 'lucide-react';
+import { Mail, Heart  } from 'lucide-react';
 import { GithubIcon as Github, LinkedinIcon as Linkedin } from './BrandIcons';
 import { personal } from '../data/portfolioData';
 
@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface py-8">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Brand */}
           <a href="#hero" className="font-mono text-accent text-sm font-semibold tracking-widest">
@@ -36,7 +36,7 @@ export default function Footer() {
                 aria-label={label}
                 className="text-slate-600 hover:text-accent transition-colors"
               >
-                <Icon size={15} />
+                <Icon size={25} />
               </a>
             ))}
           </div>

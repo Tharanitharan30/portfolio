@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-32">
+      <div className="relative max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-32">
         <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)]">
           <div className="relative z-10">
             {/* Terminal prompt badge */}
@@ -108,14 +108,6 @@ export default function Hero() {
             <div className="w-full max-w-[620px] lg:max-w-none">
               <Card />
             </div>
-          </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="mt-10 flex justify-center lg:justify-start animate-bounce">
-          <div className="flex flex-col items-center gap-1.5">
-            <span className="font-mono text-xs text-slate-600">scroll</span>
-            <ArrowDown size={14} className="text-accent/50" />
           </div>
         </div>
       </div>
