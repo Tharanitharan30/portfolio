@@ -126,16 +126,50 @@ export const projects = [
     gradient: "from-cyan-500/15 to-teal-500/15",
     accentColor: "#2DD4BF",
   },
+  {
+  name: "Movie Recommendation System",
+  tagline: "AI-powered full-stack movie discovery platform with real-time data and personalized recommendations.",
+  gradient: "from-violet-500/20 via-purple-500/10 to-indigo-500/20",
+  accentColor: "#8B5CF6",
+  github: "https://github.com/Tharanitharan30/Movie-Recommendation",
+  demo: "https://your-app.vercel.app",  // ← replace with your Vercel URL
+  features: [
+    "Content-based + collaborative filtering ML recommendation engine",
+    "Live trending, search and movie details via TMDB API",
+    "JWT authentication with user ratings and watch history",
+    "YouTube trailers embedded on movie detail pages",
+  ],
+  stack: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Django",
+    "DRF",
+    "scikit-learn",
+    "PostgreSQL",
+    "TMDB API",
+    "Render",
+    "Vercel",
+  ],
+},
 ];
 
 export const experience = [
   {
     role: "Full Stack Developer Intern",
     company: "infosys",
-    period: "2026 – Present",
+    period: "3 Months",
     description:
       "",
     tags: ["react", "Express.js", "MongoDB"],
+  },
+  {
+    role: "ML Engineer Intern",
+    company: "Nativeva",
+    period: "Present",
+    description:
+      "",
+    tags: ["Python", "PyTorch", "TensorFlow", "OpenCV"],
   },
 ];
 
