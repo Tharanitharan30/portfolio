@@ -5,7 +5,7 @@ export const personal = {
   location: "Coimbatore, India",
   email: "tharanitharan3011@gmail.com",
   github: "https://github.com/Tharanitharan30",
-  linkedin: "https://www.linkedin.com/in/tharanitharan-s-902365324/",
+  linkedin: "https://www.linkedin.com/in/tharanitharan-s/",
   resume: "/resume.pdf",
   bio: "I'm a Full Stack Developer and ML Engineer who loves building end-to-end systems—from mobile apps to AI-powered backends. I enjoy decoding complex problems, whether that's designing scalable REST APIs, training neural networks, or architecting cross-platform apps. Based in Coimbatore, I'm driven by clean code, sharp design, and the satisfaction of a system that just works.",
   funFact: "I once solved a Sudoku puzzle programmatically from a photo — and that rabbit hole led me deep into constraint satisfaction algorithms.",
