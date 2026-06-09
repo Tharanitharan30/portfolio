@@ -160,16 +160,24 @@ export const experience = [
     company: "infosys",
     period: "3 Months",
     description:
-      "",
+      "Built and integrated full-stack web applications using modern frontend, backend, and database technologies.",
     tags: ["react", "Express.js", "MongoDB"],
   },
   {
     role: "ML Engineer Intern",
     company: "Nativeva",
-    period: "Present",
+    period: "1 Month",
     description:
-      "",
+      "Building AI-powered solutions using Generative AI, prompt engineering, and machine learning to solve real-world problems.",
     tags: ["Python", "PyTorch", "TensorFlow", "OpenCV"],
+  },
+  {
+    role: "Gen AI Developer intern",
+    company: "STASIS ARTIS",
+    period: "present",
+    description:
+      "Building AI-powered solutions using Generative AI, prompt engineering, and machine learning to solve real-world problems.",
+    tags: ["Generative AI", "Machine Learning", "Prompt Engineering", "Python"],
   },
 ];
 
