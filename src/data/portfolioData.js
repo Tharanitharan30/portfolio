@@ -132,7 +132,7 @@ export const projects = [
   gradient: "from-violet-500/20 via-purple-500/10 to-indigo-500/20",
   accentColor: "#8B5CF6",
   github: "https://github.com/Tharanitharan30/Movie-Recommendation",
-  demo: "https://your-app.vercel.app",  // ← replace with your Vercel URL
+  demo: null,  // ← replace with your Vercel URL
   features: [
     "Content-based + collaborative filtering ML recommendation engine",
     "Live trending, search and movie details via TMDB API",
