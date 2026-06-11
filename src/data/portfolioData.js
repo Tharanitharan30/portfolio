@@ -15,40 +15,65 @@ export const skills = [
   {
     category: "Frontend",
     items: [
-      { name: "React", icon: "⚛️" },
-      { name: "Flutter", icon: "🐦" },
-      { name: "React Native", icon: "📱" },
-      { name: "Vite", icon: "⚡" },
-      { name: "Tailwind CSS", icon: "🎨" },
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+      { name: "Flutter" },
+      { name: "React Native" },
+      { name: "Tailwind CSS" },
+      { name: "Vite" },
     ],
   },
   {
     category: "Backend",
     items: [
-      { name: "Django", icon: "🐍" },
-      { name: "Express.js", icon: "🚂" },
+      { name: "Django" },
+      { name: "Express.js" },
+      { name: "Node.js" },
+      { name: "Python" },
     ],
   },
   {
-    category: "database",
+    category: "Database",
     items: [
-      { name: "MongoDB", icon: "🍃" },
-      { name: "MySQL", icon: "🐬" },
-      { name: "SQLite", icon: "🗄️" },
+      { name: "MongoDB" },
+      { name: "MySQL" },
+      { name: "SQLite" },
     ],
   },
   {
-    category: "Languages & Tools",
+    category: "ML & Data",
     items: [
-      { name: "Python", icon: "🐍" },
-      { name: "JavaScript", icon: "🟨" },
-      { name: "Dart", icon: "🎯" },
-      { name: "C", icon: "©️" },
-      { name: "SQL", icon: "🗄️" },
-      { name: "Git", icon: "🔀" },
+      { name: "Python" },
+      { name: "NumPy" },
+      { name: "Pandas" },
+      { name: "OpenCV" },
+      { name: "Matplotlib" },
+    ],
+  },
+  {
+    category: "Languages",
+    items: [
+      { name: "Python" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
+      { name: "Dart" },
+      { name: "C" },
+      { name: "Java" },
+    ],
+  },
+  {
+    category: "Tools & DevOps",
+    items: [
+      { name: "Git" },
+      { name: "GitHub" },
+      { name: "VS Code" },
+      { name: "Figma" },
     ],
   },
 ];
+
 
 export const hackathonCertificates = [
   {
