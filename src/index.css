@@ -65,3 +65,31 @@ html.light .grid-bg {
   background-image: linear-gradient(rgba(34,211,238,0.07) 1px, transparent 1px),
     linear-gradient(90deg, rgba(34,211,238,0.07) 1px, transparent 1px);
 }
+.bg-grid {
+  background-image:
+    linear-gradient(
+      rgba(0, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 255, 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
