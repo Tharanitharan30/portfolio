@@ -92,7 +92,7 @@ const skillIcons = {
 
 export default function Skills() {
   return (
-    <section className="min-h-screen px-6 py-24 text-white">
+    <section id="skills" className="min-h-screen px-6 py-24 text-white">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}

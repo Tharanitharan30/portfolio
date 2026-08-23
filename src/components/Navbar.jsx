@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Terminal } from 'lucide-react';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -11,7 +11,7 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onOpenTerminal }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState('');
@@ -70,10 +70,25 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+            <button
+              onClick={onOpenTerminal}
+              aria-label="Open interactive terminal"
+              className="flex items-center gap-1.5 px-3 py-1.5 border border-emerald-500/40 rounded-md font-mono text-xs text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 transition-all"
+            >
+              <Terminal size={12} />
+              <span>./terminal.sh</span>
+            </button>
           </div>
 
           {/* Mobile */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex md:hidden items-center gap-2">
+            <button
+              onClick={onOpenTerminal}
+              aria-label="Open interactive terminal"
+              className="p-2 text-emerald-400"
+            >
+              <Terminal size={18} />
+            </button>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
