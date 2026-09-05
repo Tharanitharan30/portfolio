@@ -29,7 +29,7 @@ export default function LoadingScreen() {
   }, [step]);
 
   return (
-    <div className="fixed inset-0 bg-[#030712] overflow-hidden z-[9999] flex items-center justify-center">
+    <div className="fixed inset-0 bg-surface overflow-hidden z-[9999] flex items-center justify-center">
 
       {/* Grid Background */}
       <div className="absolute inset-0 bg-grid opacity-20" />

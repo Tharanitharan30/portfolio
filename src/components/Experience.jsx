@@ -6,7 +6,7 @@ export default function Experience() {
   const ref = useScrollReveal();
 
   return (
-    <section id="experience" className="py-24 bg-surface-2/40">
+    <section id="experience" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="reveal">
           <div className="flex items-center gap-3 mb-12">

@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import NavigationDock from './components/NavigationDock';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -44,7 +44,7 @@ export default function App() {
     <div>
 
       <InteractiveParticles />
-      <Navbar onOpenTerminal={() => setTerminalOpen(true)} />
+      <NavigationDock onOpenTerminal={() => setTerminalOpen(true)} />
       <main>
         <Hero />
         <About />
